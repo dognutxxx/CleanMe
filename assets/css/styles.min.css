@@ -1,0 +1,163 @@
+@font-face {
+  font-family: ABeeZee;
+  src: url(/assets/fonts/esDR31xSG-6AGleN2tukkIcH.woff2?h=cb0df11e484561c33cd0ec5e3331b277) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: ABeeZee;
+  src: url(/assets/fonts/esDR31xSG-6AGleN2tWkkA.woff2?h=cb0df11e484561c33cd0ec5e3331b277) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+.banner6 {
+  font-family: Montserrat, sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+  overflow: hidden;
+  position: relative;
+}
+.banner6 h1,
+.banner6 h2,
+.banner6 h3,
+.banner6 h4,
+.banner6 h5,
+.banner6 h6 {
+  color: #3e4555;
+}
+.banner6 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+}
+.banner6 a {
+  text-decoration: none;
+}
+.banner6 .btn-danger-gradiant {
+  background: #ff4d7e;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0, #ff6a5b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+  background: -webkit-linear-gradient(left, #ff4d7e 0, #ff6a5b 100%);
+  background: -o-linear-gradient(left, #ff4d7e 0, #ff6a5b 100%);
+  background: linear-gradient(to right, #ff4d7e 0, #ff6a5b 100%);
+}
+.banner6 .btn-danger-gradiant:hover {
+  background: #ff6a5b;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0, #ff4d7e 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
+  background: -webkit-linear-gradient(left, #ff6a5b 0, #ff4d7e 100%);
+  background: -o-linear-gradient(left, #ff6a5b 0, #ff4d7e 100%);
+  background: linear-gradient(to right, #ff6a5b 0, #ff4d7e 100%);
+}
+.banner6 .btn-md {
+  padding: 15px 45px;
+  font-size: 16px;
+}
+.banner6 .bg-facebook {
+  background-color: #3b5a9a;
+}
+.banner6 .bg-twitter {
+  background-color: #56adf2;
+}
+.banner6 .text-danger {
+  color: #ff4d7e !important;
+}
+.banner6 .right-image {
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+@media (max-width: 1023px) {
+  .banner6 .contact-form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .banner6 .right-image {
+    position: relative;
+    bottom: -95px;
+  }
+}
+@media (max-width: 767px) {
+  .banner6 .contact-form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.fit-cover {
+  object-fit: cover;
+}
+.bs-icon {
+  --bs-icon-size: 0.75rem;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--bs-icon-size);
+  width: calc(var(--bs-icon-size) * 2);
+  height: calc(var(--bs-icon-size) * 2);
+  color: var(--bs-primary);
+}
+.bs-icon-xs {
+  --bs-icon-size: 1rem;
+  width: calc(var(--bs-icon-size) * 1.5);
+  height: calc(var(--bs-icon-size) * 1.5);
+}
+.bs-icon-sm {
+  --bs-icon-size: 1rem;
+}
+.bs-icon-md {
+  --bs-icon-size: 1.5rem;
+}
+.bs-icon-lg {
+  --bs-icon-size: 2rem;
+}
+.bs-icon-xl {
+  --bs-icon-size: 2.5rem;
+}
+.bs-icon.bs-icon-primary {
+  color: var(--bs-white);
+  background: var(--bs-primary);
+}
+.bs-icon.bs-icon-primary-light {
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), 0.2);
+}
+.bs-icon.bs-icon-semi-white {
+  color: var(--bs-primary);
+  background: rgba(255, 255, 255, 0.5);
+}
+.bs-icon.bs-icon-rounded {
+  border-radius: 0.5rem;
+}
+.bs-icon.bs-icon-circle {
+  border-radius: 50%;
+}
+.head1-intro {
+  color: var(--bs-warning);
+  font-size: 39.52px;
+  text-align: center;
+  font-family: ABeeZee, sans-serif;
+  height: 112.219px;
+}
+h1 {
+  color: var(--bs-primary);
+  font-size: 30px;
+  text-align: start;
+  font-family: ABeeZee, sans-serif;
+  padding: 36px;
+}
+.tel {
+  padding-bottom: 0;
+  margin-top: 16px;
+  font-size: 33px;
+  font-family: ABeeZee, sans-serif;
+  text-align: center;
+}
