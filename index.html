@@ -13,15 +13,40 @@
       font-size: 30px;
       padding: 50px;
       font-style: bold;
+      font-weight: 1000;
     }
 
-    @media (max-width: 321px) {
-      .header-top {
-        font-size: 20px;
-        padding: 20px;
+    .header-1 {
+      text-align: center;
+      font-size: 50px;
+      padding: 50px;
+      font-style: bold;
+      color: rgb(33, 37, 41);
+      font-weight: 1000;
+    }
+
+    @media (max-width: 767px) {
+      .testDesktop {
+        display: none;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .testMobile {
+        display: none;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .header-Mobile {
+        text-align: center;
+        font-size: 30px;
+        padding: 50px;
+        font-style: bold;
       }
     }
   </style>
+
   <body style="margin-top: 0">
     <div class="container" id="nav">
       <!-- Start: Navbar Right Links -->
@@ -43,7 +68,7 @@
           </button>
           <div class="collapse navbar-collapse text-end" id="navcol-2">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link  active" href="/index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="/About.html">About</a></li>
               <li class="nav-item"><a class="nav-link" href="/Services.html">Services</a></li>
               <a class="btn btn-primary ms-md-2" role="button" href="/Login.html">Login</a>
@@ -54,13 +79,31 @@
       <!-- End: Navbar Right Links -->
     </div>
 
-    <div class="container" id="callme" style="color: #ffffff; background: #0d6efd; border-color: var(--bs-blue); border-radius: 10px; height: auto">
-      <div class="header-top">GIVE YOUR HOME SOME <v-switch value input-value="true" disabled></v-switch></div>
-      <div class="header-top">Reliable house cleaning professionals serving the greater Bangkok area</div>
+    <!-- Start: Desktop Display -->
+    <div
+      class="container"
+      id="callme"
+      style="
+        color: #ffffff;
+        background: url('https://maidwhiz.com/wp-content/uploads/2019/07/silo-img-right.png') left / cover;
+        border-color: var(--bs-blue);
+        border-radius: 10px;
+        height: auto;
+        background-size: cover;
+      "
+    >
+      <div class="header-1" id="callme">
+        <p class="">Clean Me</p>
+        <p class="">GET CLEAN YOUR HOME NOW</p>
+      </div>
     </div>
-    <div class="" id="callme"><p class="header-top">Call Me 02-999-999</p></div>
-    <div class="container " id="whyChoose" style="background: #0d6efd; padding: 40px; border-radius: 10px; color: rgb(92, 138, 255)">
-      <div id="line-1"><p class="" style="text-align: center; font-weight: bold; font-size: 24px; color: white">WHY CHOSSE US ?</p></div>
+    <div class="" id="callme">
+      <p class="header-top">Call Me 02-999-999</p>
+    </div>
+    <div class="container testDesktop" id="whyChoose" style="background: #0d6efd; padding: 40px; border-radius: 10px; color: rgb(92, 138, 255)">
+      <div id="line-1">
+        <p class="" style="text-align: center; font-weight: bold; font-size: 24px; color: white">WHY CHOSSE US ?</p>
+      </div>
       <div class="row" style="padding: 20px; text-align: center">
         <div class="col" style="border-left-style: solid; border-left-color: var(--bs-white); font-size: 24px; letter-spacing: 5px; color: var(--bs-white)">
           <p>Certified</p>
@@ -79,9 +122,61 @@
         </div>
       </div>
     </div>
+
+    <!-- Start: Mobile Display -->
+    <div class="container testMobile" id="whyChoose" style="background: #0d6efd; padding: 40px; border-radius: 10px; color: rgb(92, 138, 255)">
+      <div id="line-1">
+        <p class="" style="text-align: center; font-weight: bold; font-size: 20px; color: white">WHY CHOSSE US ?</p>
+      </div>
+      <div id="carouselExampleMobile" class="carousel slide">
+        <div class="carousel-inner p-4" style="text-align: center; font-weight: bold; font-size: 24px; color: white">
+          <div class="carousel-item active">
+            <h3 class="text-center">Certified</h3>
+          </div>
+          <div class="carousel-item">
+            <h3 class="text-center">Professional</h3>
+          </div>
+          <div class="carousel-item">
+            <h3 class="text-center">Cleaners</h3>
+          </div>
+          <div class="carousel-item">
+            <h3 class="text-center">Certified</h3>
+          </div>
+          <div class="carousel-item">
+            <h3 class="text-center">Environmentally</h3>
+          </div>
+          <div class="carousel-item">
+            <h3 class="text-center">Friendly</h3>
+          </div>
+          <div class="carousel-item">
+            <h3 class="text-center">Cleaning</h3>
+          </div>
+          <div class="carousel-item">
+            <h3 class="text-center">Satisfy</h3>
+          </div>
+          <div class="carousel-item">
+            <h3 class="text-center">Guarantee</h3>
+          </div>
+          <div class="carousel-item">
+            <h3 class="text-center">Comfort</h3>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleMobile" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleMobile" data-bs-slide="next">
+          <span class="carousel-control-next-icon" style="color: black" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
     <div class="container" id="ourService">
       <div class="row">
-        <div class="col"><p style="text-align: center; font-size: 33px; font-weight: bold; margin: 50px">Our Services</p></div>
+        <div class="col">
+          <p style="text-align: center; font-size: 33px; font-weight: bold; margin: 50px">Our Services</p>
+        </div>
       </div>
     </div>
     <div class="container" id="services">
@@ -98,29 +193,33 @@
             border-radius: 30px;
           "
         >
-          <p
+          <a
+            href="/Services.html"
             class="d-xl-flex justify-content-xl-center align-items-xl-start"
             style="
               padding: 10px;
               font-size: 28px;
               font-weight: bold;
-              text-shadow: 0px 0px;
+              text-shadow: none;
               margin: 5px;
               background: rgba(255, 255, 255, 0.5);
               text-align: center;
               border-width: 0px;
               border-left-color: var(--bs-red);
               border-radius: 30px;
+              color: black;
+              text-decoration: none;
             "
           >
             Home Cleaning
-          </p>
+          </a>
         </div>
         <div
           class="col d-sm-flex d-xl-flex justify-content-sm-center align-items-sm-center justify-content-xl-center align-items-xl-center col-sm-4 col-8 col-md-5"
           style="background: url('https://maidwhiz.com/wp-content/uploads/2019/07/silo-img-right.png') center / auto; filter: blur(0px); margin: 5px; border-radius: 30px"
         >
-          <p
+          <a
+            href="/Services.html"
             style="
               padding: 10px;
               font-size: 28px;
@@ -131,10 +230,12 @@
               background: rgba(255, 255, 255, 0.5);
               text-align: center;
               border-radius: 30px;
+              text-decoration: none;
+              color: black;
             "
           >
             Maid Service
-          </p>
+          </a>
         </div>
         <div
           class="col d-sm-flex d-xl-flex justify-content-sm-center align-items-sm-center justify-content-xl-center align-items-xl-center col-sm-4 col-8 col-md-5"
@@ -146,9 +247,24 @@
             border-radius: 30px;
           "
         >
-          <p style="padding: 10px; font-size: 28px; font-weight: bold; margin: 5px; background: rgba(255, 255, 255, 0.5); text-align: center; border-radius: 30px">
+          <a
+            href="/Services.html"
+            style="
+              text-decoration: none;
+              color: black;
+              padding: 10px;
+              font-size: 28px;
+              font-weight: bold;
+              margin: 5px;
+              background: rgba(255, 255, 255, 0.5);
+              text-align: center;
+              border-radius: 30px;
+              text-decoration: none;
+              color: rgb(33, 37, 41);
+            "
+          >
             Window Washing
-          </p>
+          </a>
         </div>
         <div
           class="col d-sm-flex d-xl-flex justify-content-sm-center align-items-sm-center justify-content-xl-center align-items-xl-center col-sm-4 col-8 col-md-5"
@@ -161,9 +277,22 @@
             border-radius: 30px;
           "
         >
-          <p style="padding: 10px; font-size: 28px; font-weight: bold; margin: 5px; background: rgba(255, 255, 255, 0.5); text-align: center; border-radius: 30px">
+          <a
+            href="/Services.html"
+            style="
+              text-decoration: none;
+              color: black;
+              padding: 10px;
+              font-size: 28px;
+              font-weight: bold;
+              margin: 5px;
+              background: rgba(255, 255, 255, 0.5);
+              text-align: center;
+              border-radius: 30px;
+            "
+          >
             Office Cleanings
-          </p>
+          </a>
         </div>
         <div
           class="col d-sm-flex d-xl-flex justify-content-sm-center align-items-sm-center justify-content-xl-center align-items-xl-center col-sm-4 col-8 col-md-5"
@@ -176,9 +305,23 @@
             border-radius: 30px;
           "
         >
-          <p style="padding: 10px; font-size: 28px; font-weight: bold; margin: 5px; transform: perspective(0px); background: #ffffff80; text-align: center; border-radius: 30px">
+          <a
+            href="/Services.html"
+            style="
+              text-decoration: none;
+              color: black;
+              padding: 10px;
+              font-size: 28px;
+              font-weight: bold;
+              margin: 5px;
+              transform: perspective(0px);
+              background: #ffffff80;
+              text-align: center;
+              border-radius: 30px;
+            "
+          >
             Move in / Out Cleaning
-          </p>
+          </a>
         </div>
         <div
           class="col d-sm-flex d-xl-flex justify-content-sm-center align-items-sm-center justify-content-xl-center align-items-xl-center col-sm-4 col-8 col-md-5"
@@ -192,12 +335,26 @@
             border-radius: 30px;
           "
         >
-          <p style="padding: 10px; font-size: 28px; font-weight: bold; margin: 5px; background: rgba(255, 255, 255, 0.5); text-align: center; border-radius: 30px">
+          <a
+            href="/Services.html"
+            style="
+              text-decoration: none;
+              color: black;
+              padding: 10px;
+              font-size: 28px;
+              font-weight: bold;
+              margin: 5px;
+              background: rgba(255, 255, 255, 0.5);
+              text-align: center;
+              border-radius: 30px;
+            "
+          >
             Carpet Cleaning
-          </p>
+          </a>
         </div>
       </div>
     </div>
+
     <div class="container" id="google">
       <!-- Start: Contact Map Two Columns -->
       <section class="py-4 py-xl-5">
@@ -242,7 +399,9 @@
       <footer class="text-center py-4" style="border-top-style: solid; border-top-color: var(--bs-gray-200)">
         <div class="container">
           <div class="row row-cols-1 row-cols-lg-3">
-            <div class="col"><p class="text-muted my-2">Copyright&nbsp;© 2023 Brand</p></div>
+            <div class="col">
+              <p class="text-muted my-2">Copyright&nbsp;© 2023 Brand</p>
+            </div>
             <div class="col">
               <ul class="list-inline my-2">
                 <li class="list-inline-item me-4">
