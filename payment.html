@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/assets/css/styles.min.css?h=d109b8685ff5d99cc658748c4a572111" />
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <style>
@@ -67,7 +68,8 @@
 
   <div class="container">
     <!-- Start: Navbar Right Links -->
-    <nav class="navbar navbar-light navbar-expand-md py-3" style="border-bottom-style: solid; border-bottom-color: var(--bs-gray-200)">
+    <nav class="navbar navbar-light navbar-expand-md py-3"
+      style="border-bottom-style: solid; border-bottom-color: var(--bs-gray-200)">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#"><span
             class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg
@@ -141,8 +143,21 @@
     <form id="bookingForm" onsubmit="alertform()">
       <input type="hidden" id="selectedDateTime" name="selectedDateTime" />
       <div class="text-end my-4">
-        <button type="button" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">ชำระเงิน</button>
+        <button type="button" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true"
+          onclick="payment()">ชำระเงิน</button>
+        <script>
+          // สร้างฟังก์ชันที่จะถูกเรียกเมื่อปุ่มถูกคลิก
+          function payment() {
+
+            Swal.fire(
+              'Payment Success',
+              'Thank you for your booking',
+              'success'
+            )
+          }
+        </script>
       </div>
+
     </form>
   </div>
 
@@ -180,6 +195,8 @@
         var selectedDateTime = selectedDate + " " + selectedTime;
         $("#selectedDateTime").val(selectedDateTime);
       }
+
+
     });
   </script>
   <!-- End: Booking  -->
